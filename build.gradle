@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+repositories {
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies{
+    compile("com.github.spullara.mustache.java:compiler:0.8.8")
+}
+
+mainClassName = "Foo.MustAcheBuilder"
